@@ -1,0 +1,8 @@
+table, th, td {
+    border:2px solid black;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+th, td {
+    background-color: #6f75d7
+}

@@ -1,37 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    body{
-        background-color: antiquewhite;
-    }
-</style>
-<body>
-    <section id="contact-us">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need more information, feel free to reach out to us using the form below.</p>
-      
-        <form action="submit-form.php" method="POST">
-          <label for="name">Your Name:</label><br>
-          <input type="text" id="name" name="name" required><br><br>
-      
-          <label for="email">Your Email:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
-      
-          <label for="message">Your Message:</label><br>
-          <textarea id="message" name="message" rows="5" required></textarea><br><br>
-      
-          <input type="submit" value="Send Message">
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <h2>📬 Get in Touch</h2>
+    <p class="subtext">We’d love to hear from you — reservations, feedback, or just say hello!</p>
+  
+    <div class="contact-wrapper">
+      <div class="contact-card">
+        <h3>Send Us a Message</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">📨 Send Message</button>
         </form>
-      
-        <h3> Contact Information</h3>
-        <p>Email: rudrikakhatri@gmail.com</p>
-        <p>Phone: 9358101598</p>
-      </section>
-      
-</body>
-</html>
+      </div>
+  
+      <div class="contact-details">
+        <h3>📍 Visit Us</h3>
+        <p><strong>Address:</strong><br> 123 Spice Street, balotra, India</p>
+        <p><strong>Phone:</strong><br> +91 9358101598</p>
+        <p><strong>Email:</strong><br> hello@kiridadhaba.com</p>
+        <p><strong>Hours:</strong><br> 11:00 AM – 11:00 PM (Everyday)</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CSS Styling -->
+  <style>
+    .contact-section {
+      padding: 60px 30px;
+      background: linear-gradient(135deg, #f3e5d3, #e2c7a6);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+    }
+  
+    .contact-section h2 {
+      font-size: 36px;
+      color: #5a3210;
+      margin-bottom: 10px;
+    }
+  
+    .subtext {
+      color: #7a5c3b;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+  
+    .contact-card, .contact-details {
+      background-color: #fffdf9;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      min-width: 320px;
+      max-width: 450px;
+      text-align: left;
+    }
+  
+    .contact-card h3, .contact-details h3 {
+      color: #8b4513;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 1px solid #d9b28f;
+      border-radius: 10px;
+      font-size: 16px;
+      background-color: #fef8f3;
+    }
+  
+    .contact-form button {
+      width: 100%;
+      background-color: #8b4513;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+    .contact-form button:hover {
+      background-color: #5a3210;
+    }
+  
+    .contact-details p {
+      font-size: 16px;
+      color: #444;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+  
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+  

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiri Da Dhaba </title>
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            
+           <ul><li><h3>Kiri Da Dhaba</h3></li></ul> 
+           
+            <ul>
+                
+                <li><a href="food menu.html">Food Menu</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="contact Us.html">Contact us</a></li>
+                <li class="location">📍 Balotra</li>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Kiri Da Dhaba</h1>
+    </section>
+
+    <section class="welcome-section">
+        <h2>Welcome to Our Restaurant</h2>
+        <p>Established in 2020, we have been serving delicious meals for 5 years.We offer delicious meals and unique dishes filled with amazing flavours and luxurious aromas.
+             We invite families to enjoy a special dining experience and celebrate our love for great food.</p>
+    </section>
+
+    <section class="carousel">
+        <div class="carousel-container" id="carousel-container">
+            <img src="naan.jpg" alt="naan">
+            <img src="Veg Biryani2.webp" alt="Veg Biryani2">
+            <img src="butter paneer.jpg" alt="butter paneer">
+            <img src="chole bhature.jpg" alt="chole bhature">
+            <img src="Aloo Paratha.jpg" alt="Aloo Paratha">
+            <img src="dal_makhani.jpg" alt="dal_makhani">
+            <img src="gulab jamun.jpg" alt="gulab jamun">
+            <img src="dosa.jpeg" alt="dosa">
+            <img src="raita2.jpg" alt="raita">
+        </div>
+    </section>
+
+    <script>
+        let index = 0;
+        function slideImages() {
+            const container = document.getElementById('carousel-container');
+            index++;
+            if (index > 4) index = 0;
+            container.style.transform = `translateX(${-index * 320}px)`;
+        }
+        setInterval(slideImages, 2000);
+    </script>
+    <footer style="background-color: #8b4513; color: white; padding: 20px 0; margin-top: 40px;">
+        <div style="margin-bottom: 10px;">
+            <a href="contact Us.html" style="color: white; margin: 0 15px; text-decoration: none;">Contact Us</a>
+            <a href="https://instagram.com" style="color: white; margin: 0 15px; text-decoration: none;">Instagram</a>
+            <a href="https://facebook.com" style="color: white; margin: 0 15px; text-decoration: none;">Facebook</a>
+        </div>
+        <div>&copy; 2025 Kiri Da Dhaba. All rights reserved.</div>
+    </footer>
+    
+</body>
+</html>

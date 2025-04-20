@@ -1,0 +1,23 @@
+.about-us {
+    padding: 50px 20px;
+    background-color: #f8f0e3;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    color: #5c4033;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    color: #3e2c1c;
+    font-size: 18px;
+    line-height: 1.8;
+    background-color: #fffaf3;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(60, 40, 20, 0.1);
+}
